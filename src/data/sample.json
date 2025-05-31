@@ -1,0 +1,34 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "title": "Computer Science Paraprofessional",
+            "company": "Colorado College",
+            "location": "Colorado Springs, CO",
+            "description": "Hold office hours for introductory and some upper level CS courses, assist faculty, organize social events, and fulfill administrative duties.",
+            "startDate": "2025-08-11",
+            "endDate": "2026-05-18"
+        },
+        {
+            "id": 2,
+            "title": "Computer Science Tutor",
+            "company": "Colorado College",
+            "location": "Colorado Springs, CO",
+            "description": "Hold office hours for Theory of Computation and Computer Science II and work weekly shifts during drop-in hours at quantitative reasoning center to answer homework questions",
+            "startDate": "2025-01-20",
+            "endDate": "2025-05-18"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Senior Vocal Recital",
+            "description": "30 minute vocal performance with turnout of 25+ people consisting of classical, opera, and broadway pieces."
+        },
+        {
+            "id": 2,
+            "name": "Brain Tumor Segmentation",
+            "description": "Fine-tuned pre-trained 3D SwinUNETR (Swin transformers and U-Net architectures) computer vision machine learning model using lab dataset of 56 clinically annotated post-surgery MRI images of brain tumor patients"
+        }
+    ]
+} 
