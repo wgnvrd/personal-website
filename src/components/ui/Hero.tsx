@@ -20,7 +20,7 @@ export const Hero: React.FC<HeroProps> = ({
   return (
     // <Container className="py-5 lg:py-10 px-4 lg:mx-auto md:px-8">
     <div>
-      <div className="relative flex flex-row items-center justify-center lg:items-center lg:justify-around gap-4 lg:gap-8 max-w-3xl mx-8 lg:m-auto">
+      <div className="relative flex flex-col lg:flex-row items-center justify-center lg:items-center lg:justify-around gap-4 lg:gap-8 max-w-3xl mx-8 lg:m-auto">
         <ProfileIcon className="w-40 h-40 lg:w-50 lg:h-50 self-center" />
         <div className="flex flex-col gap-0 items-center justify-center text-center lg:items-start lg:text-left">
           <Header>{title}</Header>
