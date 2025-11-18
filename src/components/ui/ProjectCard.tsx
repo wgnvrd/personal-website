@@ -24,14 +24,14 @@ export function ProjectCard({ image, title, description, tags, paperLink }: Proj
           />
         )}
         <div className="grow-3">
-          <h2 className="text-lg font-black font-spaceGrotesk">{title}</h2>
-          <p>{description}</p>
+          <h2 className="text-md font-black font-spaceGrotesk">{title}</h2>
+          <p className="text-sm">{description}</p>
           {paperLink && (
             <a
               href={paperLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-2 text-primary underline underline-offset-4 font-semibold hover:text-primary/70 transition-colors"
+              className="inline-block mt-2 text-sm text-primary underline underline-offset-4 font-semibold hover:text-primary/70 transition-colors"
             >
               View Paper
             </a>

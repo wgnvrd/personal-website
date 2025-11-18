@@ -10,6 +10,11 @@
   --white-overlay: rgba(255, 255, 255, 0.55);
 }
 
+html.dark {
+  --background: #171717;
+  --foreground: #dddddd;
+}
+
 @theme {
   --font-jetBrainsMono: 'JetBrains Mono', monospace;
   --font-spaceGrotesk: 'Space Grotesk', sans-serif;
@@ -25,7 +30,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  html:not(.light) {
     --background: #171717;
     --foreground: #dddddd;
   }

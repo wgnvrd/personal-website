@@ -128,18 +128,18 @@ Challenge (SMCDC 2023)
       </section>
       <section className="flex flex-col justify-center items-start my-4">
         <Header>awards</Header>
-        <ul className="list-disc pl-6 space-y-4 mt-2">
+        <ul className="text-md list-disc pl-6 space-y-4 mt-2">
           <li>
             <span className="font-bold">Stephen Janke Prize in Computer Science</span>, Colorado College 2025
             <br />
-            <span className="text-foreground/75">
+            <span className="text-sm text-foreground/75">
               Awarded to the graduating senior who best demonstrates exceptional talent, breadth of achievement, and academic excellence in Computer Science.
             </span>
           </li>
           <li>
             <span className="font-bold">Fulbright Research Semifinalist</span> (Selected as Alternate Candidate) 2025
             <br />
-            <span className="text-foreground/75">
+            <span className="text-sm text-foreground/75">
               Proposal: Using NeRFs and Gaussian Splatting for adversarial self-driving environment simulation with Professor Florian Shkurti at University of Toronto, Canada.
             </span>
           </li>
@@ -152,7 +152,7 @@ Challenge (SMCDC 2023)
           <li>
             <span className="font-bold">Colorado College Euclid Scholarship</span> 2022
             <br />
-            <span className="text-foreground/75">
+            <span className="text-sm text-foreground/75">
               Awarded to students who show exceptional promise in mathematics or computer science (17 out of 112 nominations).
             </span>
           </li>
