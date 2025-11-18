@@ -1,4 +1,9 @@
 import React from 'react';
+import ProfileIcon from './ProfileIcon';
+import { SocialLinks } from './SocialLinks';
+import { Header } from './Header';
+import { Container } from './Container';
+import { Button } from './Button';
 
 interface HeroProps {
   title: string;
@@ -9,26 +14,25 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({
   title,
   subtitle,
-  align = 'left'
 }) => {
   return (
-    <section className="container relative py-20 px-4 md:px-6 max-w-5xl mx-auto">
-      <div className={`flex flex-col gap-6 ${align === 'center' ? 'items-center text-center' : 'items-start text-left'}`}>
-        <h1 className="relative z-10 max-w-3xl">
-          {title}
-        </h1>
-        {subtitle && (
-          <p className="text-lg md:text-xl max-w-2xl opacity-90">
-            {subtitle}
-          </p>
-        )}
+    <Container className="py-10 lg:py-20 px-4 lg:mx-auto md:px-8">
+      <div className="relative flex flex-col justify-center align-center lg:flex-row lg:justify-around gap-2 lg:gap-8 max-w-xl m-auto">
+        <ProfileIcon className="w-40 h-40 lg:w-50 lg:h-50 self-center lg:self-start" />
+        <div className={`flex flex-col gap-0 items-center align-center justify-center text-center lg:items-start lg:text-left'}`}>
+          <Header>{title}</Header>
+          {subtitle && (
+            <p className="text-lg lg:text-xl lg:text-left max-w-2xl opacity-90 font-bold">
+              {subtitle}
+            </p>
+          )}
+          {/* Resume Button */}
+          {/* <Button href="/cv.pdf" className="">
+            Resume
+          </Button> */}
+          <SocialLinks/>
+        </div>
       </div>
-      
-      {/* Optional decorative background element */}
-      <div 
-        className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl -z-10" 
-        aria-hidden="true"
-      />
-    </section>
+    </Container>
   );
 }; 

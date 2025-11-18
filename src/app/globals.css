@@ -4,66 +4,41 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #5154FF;
+  --primary: #ff6b00;
   --black: #000000;
   --white: #ffffff;
   --white-overlay: rgba(255, 255, 255, 0.55);
 }
 
+@theme {
+  --font-jetBrainsMono: 'JetBrains Mono', monospace;
+  --font-spaceGrotesk: 'Space Grotesk', sans-serif;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-white-overlay: var(--white-overlay);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #dddddd;
   }
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(
+    135deg,
+    var(--background) 0%,
+    color-mix(in srgb, var(--background) 85%, var(--primary)) 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 2.5em;
-  font-family: var(--font-jetBrainsMono);
-  font-weight: 800;
-  display: inline-block;
-  position: relative;
-  background: transparent;
-  z-index: 1;
-  letter-spacing: -0.04em;
-  /* text-transform: uppercase;
-  text-align: center;
-  text-shadow: 0px 0px 10px var(--white-overlay); */
-  /* box-shadow: 10px 10px 0px var(--white-overlay), 10px 10px 0px var(--primary); */
-}
-
-h1::before {
-  content: "";
-  position: absolute;
-  top: 0.55em;
-  left: 0.3em;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(var(--white-overlay), var(--white-overlay)), var(--primary);
-  z-index: -1;
-}
-
-.container {
-  max-width: 1200px;
-  background: var(--white-overlay);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  border: var(--black) 3px solid;
-  border-radius: 1em;
 }
