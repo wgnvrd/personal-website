@@ -13,14 +13,14 @@ export function TimelineEntry({ date, title, description, tags, location }: Time
       "after:content-[''] after:absolute after:w-1 after:bg-primary after:top-[1.1em] after:bottom-[-2em] after:left-[-1.125em] last-of-type:after:invisible"}>
       <p className="text-md font-bold text-foreground/75 font-spaceGrotesk">{date}</p>
       <div>
-        <h2 className="text-xl font-black font-spaceGrotesk">
+        <h2 className="text-lg font-black font-spaceGrotesk">
           {title}
           {location && <span> | {location}</span>}
         </h2>
         <p>{description}</p>
         <div className="flex flex-wrap gap-2 my-1">
           {tags.map((tag) => (
-            <div key={tag} className="bg-primary shadow-sm text-white px-2 py-1 rounded-md">
+            <div key={tag} className="bg-transparent border-primary border-1 shadow-sm text-sm text-primary px-2 py-1 rounded-md">
               {tag}
             </div>
           ))}

@@ -9,9 +9,10 @@ interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
+  paperLink?: string; // new optional prop
 }
 
-export function ProjectCard({ image, title, description, tags }: ProjectCardProps) {
+export function ProjectCard({ image, title, description, tags, paperLink }: ProjectCardProps) {
   return (
     <Container>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 px-8 py-5">
@@ -23,15 +24,25 @@ export function ProjectCard({ image, title, description, tags }: ProjectCardProp
           />
         )}
         <div className="grow-3">
-          <h2 className="text-2xl font-black font-spaceGrotesk">{title}</h2>
+          <h2 className="text-lg font-black font-spaceGrotesk">{title}</h2>
           <p>{description}</p>
-          <div className="flex flex-wrap gap-2 my-1">
+          {paperLink && (
+            <a
+              href={paperLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-2 text-primary underline underline-offset-4 font-semibold hover:text-primary/70 transition-colors"
+            >
+              View Paper
+            </a>
+          )}
+          {/* <div className="flex flex-wrap gap-2 my-1">
             {tags.map((tag) => (
-              <div key={tag} className="bg-primary shadow-sm text-white px-2 py-1 rounded-md">
+              <div key={tag} className="bg-transparent border-primary/90 border-1 shadow-sm text-sm text-primary/90 px-2 py-1 rounded-md">
                 {tag}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </Container>

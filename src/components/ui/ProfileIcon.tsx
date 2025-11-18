@@ -17,7 +17,7 @@ export default function ProfileIcon({
 }: ProfileIconProps) {
   return (
     <div className={`relative ${className}`}>
-      <svg 
+      {/* <svg 
         viewBox="0 0 112 114" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
@@ -29,15 +29,16 @@ export default function ProfileIcon({
           stroke={strokeColor} 
           strokeWidth={strokeWidth}
         />
-      </svg>
-      <Image
-        src="/profile-no-bg-shadow.svg"
-        alt="Portrait of Izzy Wagenvoord"
-        width={112}
-        height={114}
-        className="absolute top-[-1px] left-0 w-full h-full"
-        priority
-      />
+      </svg> */}
+      <div className="w-full h-full aspect-square relative">
+        <Image
+          src="/hike-pikes-sq.jpg"
+          alt="Portrait of Izzy Wagenvoord"
+          fill
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          priority
+        />
+      </div>
       {/* <svg
         viewBox="0 0 112 114" 
         fill="none" 
