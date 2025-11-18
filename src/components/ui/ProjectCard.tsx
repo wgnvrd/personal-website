@@ -7,7 +7,7 @@ interface ProjectCardProps {
     alt: string;
   };
   title: string;
-  description: string;
+  description: React.ReactNode;
   tags: string[];
   paperLink?: string; // new optional prop
 }
