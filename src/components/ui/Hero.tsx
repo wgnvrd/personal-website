@@ -24,7 +24,7 @@ export const Hero: React.FC<HeroProps> = ({
         <ProfileIcon className="w-40 h-40 lg:w-50 lg:h-50 self-center" />
         <div className="flex flex-col gap-0 items-center justify-center text-center lg:items-start lg:text-left">
           <Header>{title}</Header>
-          
+          {/* <p className='italic'>isabellewagenvoord [at] gmail [dot] com</p>  */}
           {subtitle && (
             <p className="text-sm lg:text-sm text-left max-w-2xl opacity-90 font-bold">
               {subtitle}

@@ -20,11 +20,11 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = '' }) => {
       href: '/cv.pdf',
       icon: faFilePdf
     },
-    // {
-    //   icon: faGithub,
-    //   href: 'https://github.com/wgnvrd',
-    //   label: 'GitHub'
-    // },
+    {
+      icon: faGithub,
+      href: 'https://github.com/wgnvrd',
+      label: 'GitHub'
+    },
     {
       icon: faLinkedin,
       href: 'https://linkedin.com/in/iwagenvoord',
@@ -48,7 +48,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = '' }) => {
             {link.label}
           </a>
           {socialLinks.indexOf(link) < socialLinks.length - 1 && (
-            <span className="mx-1 text-foreground/40 select-none">/</span>
+            <span className="text-foreground/40 select-none">/</span>
           )}
         </>
       ))}
