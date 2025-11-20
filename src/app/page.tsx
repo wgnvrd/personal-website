@@ -115,7 +115,7 @@ Challenge (SMCDC 2023)
           date="MAY 2023 — AUGUST 2023"
           title="Research Intern"
           location="University of North Texas"
-          description="Fine-tuned pre-trained 3D SwinUNETR (Swin transformers and U-Net architectures) computer vision machine learning model using lab dataset of 56 clinically annotated post-surgery MRI images of brain tumor patients."
+          description="First coauthor on paper analyzing 8 years of nationwide power outage time-series data for 3000+ counties by algorithmically identifying outage events and finding seasonal patterns using Python and Jupyter. Integrated and analyzed with socioeconomic data. Trained and optimized 10 autoencoders for academic study using TensorFlow and Optuna on host university’s supercomputing cluster."
           tags={['Python', 'PyTorch', 'Medical Image Analysis']}
         />
         <TimelineEntry
